@@ -247,3 +247,9 @@ bindsym $mod+m exec urxvt -e ncmpcpp
 
 #cowsay
 bindsym $mod+b exec rxvt cowsay GANOO SLASH LINOCKS 
+
+for_window [instance="floating"] floating enable
+#for_window [instance="floating"] resize set 600 450
+for_window [instance="floating"] move absolute position center
+
+bindsym $mod+Tab exec --no-startup-id urxvt -name floating
